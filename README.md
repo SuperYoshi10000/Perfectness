@@ -1,2 +1,105 @@
 # Perfectness
 The perfectest programming language
+
+💬💬 This is a comment!
+
+💬*
+This is a multiline comment!
+*💬
+
+💬**
+* This is a [fakelng]Doc comment!
+*💬
+
+## Variables
+
+a = 1
+Int b 2
+var c = 3
+var Int d = 4
+const e = 5 💬💬no editing
+const Int f = 6
+final g 💬💬
+public h
+protected i
+private j
+package k
+static l
+readonly m 💬💬no assigning
+let n 💬💬no recreating
+public static final readonly const var Int x = 100
+
+
+var 1 = 2
+output(1) = 2
+output(2 - 1) = 0
+output(3 - 2) = 1
+output(-1) = -2
+
+## Types
+
+0 or 1 Bit
+false or true or maybe or chance(0.5) Boolean
+
+123 Int
+123.45 Float
+'M' Char
+"Hi" 💬💬 Syntax Error: " is invalid
+''Hello'' String
+
+### Note about Types
+correct Int = [Bit sign, Bit[31] bits]
+correct Float = [Int base, Int exponent]
+
+## Console
+console.say(message)
+console.warn(message)
+console.error(message)
+
+output(123 * 456)
+
+## Assertions
+expect 1 + 1 = 2
+
+All of these are true
+
+assume 1 + 2 = 5
+output(1 + 1) = 2
+output(1 + 2) = 5
+output(1 + (1 + 1)) = 5
+output(1 + 3) = 4
+output(3) = 3
+output(2 + 1) = 3
+
+assume false
+output(false) = true
+output(1 = 2) = true
+output(1 > 2) = true
+output(!true) = true
+assume false = !true
+output(false) = true
+output(true = false) = true
+
+## Math
+output(1 + 1) = 2
+output(1 - 1) = 0
+These dont't work
+output(1 * 1) 💬💬 Error
+output(1 / 1) 💬💬 Error
+Use these instead
+output(1 × 2) = 1
+output(1 ÷ 2) = 0.5
+
+💬💬addition
+output(1 + 1)
+
+💬💬subtraction
+💬💬multiplication
+💬💬division
+
+💬💬division
+
+## Classes
+class Example
+ 
+!
