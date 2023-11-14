@@ -228,12 +228,13 @@ output(1 / 1) 💬💬 Syntax Error: Unknown symbol '/'
 ```
 Because the meaning of `*` for multiplying and `/` for dividing is not very obvious, use the characters meant for those operations instead:
 ```java
-output(1 × 2) :>> 1
+output(1 × 2) :>> 2
+output(1 x 3) :>> 3
 output(1 ÷ 2) :>> 0.5
 ```
 You can also use the modulus and exponent operators. However, they use different symbols than most programming languages.
 ```java
-output(5 mod 2) :>> 1
+output(5 o/o 2) :>> 1
 output(5 % 2) 💬💬 Syntax Error: Unknown usage of '%'
 output(10 ^ 3) :>> 1000
 output(10 ** 3) 💬💬 Syntax Error: Unknown symbol '**'
@@ -242,6 +243,9 @@ You can also use superscript for exponents:
 ```java
 Int exp1 = 3
 output(2ᵉˣᵖ¹) :>> 8
+```
+And ``/``/``/`` for square/cubic/fourth/other roots:
+```java
 ```
 The `%` symbol can be used for percentages:
 ```java
@@ -252,6 +256,57 @@ To use negative numbers, put a `!` before them:
 output(!1) ::> !1
 output(-1) 💬💬 Syntax Error: Unknown usage of '-'
 ```
+#### Spelling
+For all numbers and operators, you can use a spelled out version of the number or operator instead.
+```java
+output(one) ::> 1
+output(two plus two) :>> 4
+output(two to the power of four) :>> 16
+output(negative pi) :>> !3.14159263589
+```
+All valid numbers and operators are:					
+⁰¹²³⁴⁵⁶⁷⁸⁹
+###### Numbers
+| Number   | Spelling   | Number   | Spelling     | Number   | Spelling   |
+| -------- | ---------- | -------- | ------------ | -------- | ---------- |
+| `0`      | `zero`     | `1000`   | `thousand`   | `φ` | `phi` or `golden ratio`
+| `1`      | `one`      | `1000000`| `million`    | `e` | `e` or `euler's number` |
+| `2`      | `two`      | `1000000000`| `billion` | `π` | `pi` |
+| `3`      | `three`    | `10¹²`   | `trillion`   | `τ` | `tau` or `2π` |
+| `4`      | `four`     | `10¹⁵`   | `quadrillion`| `ψ` | `psi` or `supergolden ratio` |
+| `5`      | `five`     | `10¹⁸`   | `quintillion`| `γ` | `gamma` or `euler's constant` |
+| `6`      | `six`      | `10²¹`   | `sextillion` | `G` | `gravitational constant` |
+| `7`      | `seven`    | `10²⁴`   | `septillion` | `c` | `speed of light` (`in a vacuum`) |
+| `8`      | `eight`    | `10²⁷`   | `octillion`  | `h` | `planck constant` |
+| `9`      | `nine`     | `10³⁰`   | `nonillion`  | `ℵ₀` | `aleph null` or `aleph zero` |
+| `10`     | `ten`      | `10³³`   | `decillion`  | `ω` | `omega` or `number higher than everything else` |
+| `11`     | `eleven`   |        | ``         | `10¹⁰⁰` | `googol` |
+| `12`     | `twelve`   |        | ``         | <code>10<sup>10<sup>100</sup></sup></code> | `googolplex` |
+| `13`     | `thirteen` |        | ``         | `∞` | `infinity` |
+| `14`     | `fourteen` |        | ``         |
+| `15`     | `fifteen`  |        | ``         |
+| `16`     | `sixteen`  |        | ``         |
+| `17`     | `seventeen`|        | ``         |
+| `18`     | `eighteen` |        | ``         |
+| `19`     | `nineteen` |        | ``         |
+| `20`     | `twenty`   |        | ``         |
+| `30`     | `thirty`   |        | ``         |
+| `40`     | `forty`    |        | ``         |
+| `50`     | `fifty`    |        | ``         |
+| `60`     | `sixty`    |        | ``         |
+| `70`     | `seventy`  |        | ``         |
+| `80`     | `eighty`   |        | ``         |
+| `90`     | `ninety`   |        | ``         |
+| `100`    | `hundred`  | `10³⁰³`  | `centillion` |
+###### Operators
+| Operator | Spelling | Operator | Spelling |
+| -------- | -------- | -------- | -------- |
+| `+` | `plus` or `added to` or `incresed by` | `+=` | `increase ? by` or `add # to` |
+| `-` | `minus` or `subtracted from`(inverted) or `decreased by` | `-=` | `decrease ? by` or `subtract # from` |
+| `++` | `increment ?` or `increase ?` | `--` | `decrement ?` or `decrease ?` |
+| `×` or `x` | `times` or `multiplied by` | `×=` | `multiply ? by` |
+| `÷` | `over` or `divided by` | `÷=` | `divide ? by` |
+| `o/o` | `mod` | `o/o=` | `modulus ? by` |
 ### Conditions
 To check for equality, use `==`:
 ```java
